@@ -1,4 +1,4 @@
-{nixpkgsVersion ? "nixos-26.05"}: {
+{
   description = "Default flake-parts based setup";
 
   inputs = {
@@ -18,7 +18,7 @@
       systems = import inputs.systems;
       perSystem = {inputs', ...}: {
         packages = {};
-        treefmt-nix = import ./treefmt.nix;
+        treefmt = import ./treefmt.nix;
       };
     };
 }

@@ -36,7 +36,7 @@
           };
         };
 
-        treefmt-nix = import ./treefmt.nix;
+        treefmt = import ./treefmt.nix;
       };
     };
 }
